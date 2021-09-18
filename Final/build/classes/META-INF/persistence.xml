@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="FinalPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>ClasesDAO.Individual</class>
+    <class>ClasesDAO.Puntuacion</class>
+    <class>ClasesDAO.Tribunal</class>
+    <class>ClasesDAO.Candidato</class>
+    <class>ClasesDAO.Grupo</class>
+    <class>entidades.Puntuacion</class>
+    <class>entidades.Audicion</class>
+    <class>entidades.Individual</class>
+    <class>entidades.Candidato</class>
+    <class>entidades.Tribunal</class>
+    <class>entidades.Persona</class>
+    <class>entidades.Grupo</class>
+    <class>entidades.Categoria</class>
+    <class>GUI.Categoria</class>
+    <class>GUI.Persona</class>
+    <class>GUI.Puntuacion_1</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/concurso"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="concurso?zeroDateTimeBehavior=convertToNullPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>GUI.Categoria</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/concurso?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+    </properties>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Examen2021PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>examen2021.Usuarios</class>
+    <class>examen2021.Informes</class>
+    <class>examen2021.Nivelhw</class>
+    <class>examen2021.Incidenciassw</class>
+    <class>examen2021.Nivelsw</class>
+    <class>examen2021.Estados</class>
+    <class>examen2021.Incidencias</class>
+    <class>examen2021.Programas</class>
+    <class>examen2021.Nivel0</class>
+    <class>examen2021.Incidenciashw</class>
+    <class>examen2021.Equipo</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/incidencias?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+    </properties>
+  </persistence-unit>
+</persistence>
